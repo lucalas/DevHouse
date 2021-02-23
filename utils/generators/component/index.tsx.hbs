@@ -1,0 +1,18 @@
+{{#if memo}}
+import { memo } from 'react'
+{{/if}}
+
+// Style
+import styles from './style.module.css'
+
+function {{ properCase name }}() {
+  return (
+    <{{ properCase name }}Wrapper></{{ properCase name }}Wrapper>
+  )
+}
+
+{{#if memo}}
+export default memo({{ properCase name }})
+{{else}}
+export default {{ properCase name }}
+{{/if}}

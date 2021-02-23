@@ -1,0 +1,23 @@
+:root {
+  /* Font Family */
+  --roboto: 'Roboto';
+
+  /* Font Sizes */
+  --font-119px: 7.451rem;
+  --font-95px: 5.96rem;
+  --font-76px: 4.768rem;
+  --font-61px: 3.815rem;
+  --font-48px: 3.052rem;
+  --font-39px: 2.441rem;
+  --font-31px: 1.953rem;
+  --font-25px: 1.563rem;
+  --font-20px: 1.25rem;
+  --font-16px: 1rem;
+  --font-12px: 0.8rem;
+  --font-10px: 0.64rem;
+  --font-8px: 0.512rem;
+
+  /* Colors */
+  --black-500: #000000;
+  --white-500: #ffffff;
+}
