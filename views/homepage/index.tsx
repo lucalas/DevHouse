@@ -1,11 +1,18 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from './style.module.css'
+import {
+  useAuthUser,
+  withAuthUser,
+  AuthAction
+} from 'next-firebase-auth'
 
 // Components
 import Button from 'components/Button'
 
-export default function Homepage() {
+const Homepage = () => {
+  const AuthUser = useAuthUser();
+  console.log(JSON.stringify(AuthUser));
   return (
     <div className={styles.container}>
       <Head>
@@ -14,6 +21,13 @@ export default function Homepage() {
       </Head>
 
       <main className={styles.main}>
+        {
+          AuthUser.id ?
+        <div>
+          <p>Your email is {AuthUser.email ? AuthUser.email : "unknown"}.</p>
+        </div>
+        : null
+        }
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">DevHouse!</a>
         </h1>
@@ -62,3 +76,5 @@ export default function Homepage() {
     </div>
   )
 }
+
+export default withAuthUser({whenUnauthedAfterInit: AuthAction.REDIRECT_TO_LOGIN})(Homepage);
