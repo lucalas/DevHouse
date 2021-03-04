@@ -9,6 +9,8 @@
     "generate": "plop --plopfile utils/generators/index.js"
   },
   "dependencies": {
+    "@react-firebase/auth": "^0.2.10",
+    "firebase": "^8.2.9",
     "lodash": "^4.17.20",
     "next": "10.0.5",
     "react": "17.0.1",
