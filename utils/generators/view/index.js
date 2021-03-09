@@ -37,7 +37,7 @@ module.exports = {
       {
         type: 'add',
         path: '../../views/{{lowerCase name}}/style.tsx',
-        templateFile: './view/style.module.css.hbs',
+        templateFile: './view/style.tsx.hbs',
         abortOnFail: true,
       },
       {
