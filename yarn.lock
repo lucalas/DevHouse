@@ -1552,6 +1552,11 @@ classnames@2.2.6:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
+claxed@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/claxed/-/claxed-1.0.3.tgz#e52ad6d099eed670509ea09278f64221687d32a8"
+  integrity sha512-cn5auoksL+NcEu1SGcjy8rfFpRqmcmysbGHhSQULxpu4hpFVE/55Yje7ocOtsx3pXeHJYqCwkJbRnAYniz/r/g==
+
 clean-stack@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-2.2.0.tgz#ee8472dbb129e727b31e8a10a427dee9dfe4008b"

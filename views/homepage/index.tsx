@@ -4,6 +4,7 @@ import styles from './style.module.css'
 
 // Components
 import Button from 'components/Button'
+import UserRoom from 'components/UserRoom'
 
 export default function Homepage() {
   return (
@@ -17,10 +18,8 @@ export default function Homepage() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">DevHouse!</a>
         </h1>
-        <Button />
-        <p className={styles.description}>
-          Get started by editing <code className={styles.code}>pages/index.js</code>
-        </p>
+        <Button>Test button</Button>
+        <UserRoom muted name="tommaso" />
 
         <div className={styles.grid}>
           <Link href="https://nextjs.org/learn">
